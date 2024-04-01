@@ -3,5 +3,5 @@ WORKDIR /app
 COPY pom.xml
 COPY . . 
 RUN mvn clean install
-EXPOSE 8080
+EXPOSE 9090
 CMD ["java", "-jar", "target/app.jar"]
